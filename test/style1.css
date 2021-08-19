@@ -1,0 +1,103 @@
+html{
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+body{
+    height:1000px;
+    display: flex;
+    flex-flow: column  nowrap;
+}
+
+header{
+    font-size: 1.5em;
+    flex-basis: 1.5em;
+    font-display: bold;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    padding: 0.5em 0 0.5em 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #999;
+
+}
+
+.nav-item{
+    margin-right: 1em;
+}
+
+section{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+section aside{
+    grid-area: aside;
+    display: flex;
+    flex-flow: column nowrap;
+
+    font-size: 1.5em;
+    padding: 2em 2em;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #555;
+}
+.side-item{
+    margin-bottom: 0.1em;
+}
+
+.side-separator{
+    height: 0;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: 0.2em;
+
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color:#222;
+}
+section main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    margin: 2em 0em 2em 0em;
+}
+
+section main article{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #555;
+
+    padding: 1em 0.5em;
+    width: 60%;
+}
+
+.article-item-title{
+    font-size: 2em;
+    margin: 1em, 0;
+}
+
+.article-item-content{
+    font-size: 1.2em;
+    color: grey;
+    margin: 0.3em, 0.5em;
+}
+
+.article-item-separator{
+    height: 0;
+    width: 80px;
+    margin: 1em 0;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #000;
+}
+
+footer{
+    text-align: center;
+    margin: 3em 0;
+    font-size: 0.5em;
+    color: grey;
+}

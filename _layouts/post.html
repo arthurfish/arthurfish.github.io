@@ -1,0 +1,40 @@
+﻿---
+layout: default
+---
+
+<div class="post">
+  <div class="post-info">
+  <!--
+  <span>
+    {% if page.author %}
+        {{ page.author }}
+    {% else %}
+        {{ site.author.name }}
+    {% endif %}
+	鎾?	</span>
+  -->
+    {% if page.date %}
+      <br>
+      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%b %d, %Y" }}</time>
+    {% endif %}
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-line"></div>
+
+  {{ content }}
+
+</div>
+
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow"><</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">></a>
+  {% endif %}
+
+  <a href="#" class="top">&uarr;</a>
+</div>
+
+{% include comment.html %}

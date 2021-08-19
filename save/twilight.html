@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>twilight-theme.el</title>
+<meta name="generator" content="emacs 25.1.50.1; htmlfontify 0.21" />
+<style type="text/css"><!-- 
+html, body, pre { font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  color: #f8f8f8;  background: #141414;  text-decoration: none; }
+span.default   { font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  color: #f8f8f8;  background: #141414;  text-decoration: none; }
+span.default a { font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  color: #f8f8f8;  background: #141414;  text-decoration: underline; }
+span.warning   { color: #000000;  background: #ee799f;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  text-decoration: none; }
+span.warning a { color: #000000;  background: #ee799f;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  text-decoration: underline; }
+span.string   { color: #8f9d6a;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.string a { color: #8f9d6a;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+span.builtin   { color: #cacaca;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.builtin a { color: #cacaca;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+span.doc   { color: #8f9d6a;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.doc a { color: #8f9d6a;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+span.type   { color: #89788a;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.type a { color: #89788a;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+span.keyword   { color: #cda869;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.keyword a { color: #cda869;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+span.constant   { color: #cf6a4c;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.constant a { color: #cf6a4c;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+span.comment   { color: #5f5a60;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.comment a { color: #5f5a60;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+span.comment-delimiter   { color: #5f5a60;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: none; }
+span.comment-delimiter a { color: #5f5a60;  font-family: Source Code Pro, monospace;  font-stretch: normal;  font-weight: 500;  font-style: normal;  background: #141414;  text-decoration: underline; }
+ --></style>
+  </head>
+  <body>
+
+<pre><span class="comment-delimiter">;;; </span><span class="comment">twilight-theme.el --- Twilight Color Theme for Emacs.
+</span>
+<span class="comment-delimiter">;; </span><span class="comment">Copyright (C) 2008 Marcus Crafter &lt;crafterm@redartisan.com&gt;
+</span><span class="comment-delimiter">;; </span><span class="comment">Copyright (C) 2015-2016 Jason Blevins &lt;jrblevin@sdf.org&gt;
+</span>
+<span class="comment-delimiter">;; </span><span class="comment">Author: Marcus Crafter
+</span><span class="comment-delimiter">;;</span><span class="comment">	Jason Blevins
+</span><span class="comment-delimiter">;; </span><span class="comment">Adapted-By: Yesudeep Mangalapilly
+</span><span class="comment-delimiter">;; </span><span class="comment">Keywords: textmate twilight color theme
+</span><span class="comment-delimiter">;; </span><span class="comment">URL: https://github.com/jrblevin/twilight-emacs
+</span><span class="comment-delimiter">;; </span><span class="comment">Version: 1.0
+</span>
+<span class="comment-delimiter">;; </span><span class="comment">This file is NOT a part of GNU Emacs.
+</span>
+<span class="comment-delimiter">;;; </span><span class="comment">License:
+</span>
+<span class="comment-delimiter">;; </span><span class="comment">MIT License
+</span><span class="comment-delimiter">;; </span><span class="comment">-----------
+</span><span class="comment-delimiter">;; </span><span class="comment">Permission is hereby granted, free of charge, to any person
+</span><span class="comment-delimiter">;; </span><span class="comment">obtaining a copy of this software and associated documentation
+</span><span class="comment-delimiter">;; </span><span class="comment">files (the &quot;Software&quot;), to deal in the Software without
+</span><span class="comment-delimiter">;; </span><span class="comment">restriction, including without limitation the rights to use,
+</span><span class="comment-delimiter">;; </span><span class="comment">copy, modify, merge, publish, distribute, sublicense, and/or
+</span><span class="comment-delimiter">;; </span><span class="comment">sell copies of the Software, and to permit persons to whom the
+</span><span class="comment-delimiter">;; </span><span class="comment">Software is furnished to do so, subject to the following
+</span><span class="comment-delimiter">;; </span><span class="comment">conditions:
+</span><span class="comment-delimiter">;;</span><span class="comment">
+</span><span class="comment-delimiter">;; </span><span class="comment">The above copyright notice and this permission notice shall
+</span><span class="comment-delimiter">;; </span><span class="comment">be included in all copies or substantial portions of the
+</span><span class="comment-delimiter">;; </span><span class="comment">Software.
+</span><span class="comment-delimiter">;;</span><span class="comment">
+</span><span class="comment-delimiter">;; </span><span class="comment">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+</span><span class="comment-delimiter">;; </span><span class="comment">EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+</span><span class="comment-delimiter">;; </span><span class="comment">OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+</span><span class="comment-delimiter">;; </span><span class="comment">NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+</span><span class="comment-delimiter">;; </span><span class="comment">HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+</span><span class="comment-delimiter">;; </span><span class="comment">WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+</span><span class="comment-delimiter">;; </span><span class="comment">FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+</span><span class="comment-delimiter">;; </span><span class="comment">OTHER DEALINGS IN THE SOFTWARE.
+</span>
+<span class="comment-delimiter">;;; </span><span class="comment">Usage:
+</span><span class="comment-delimiter">;;</span><span class="comment">
+</span><span class="comment-delimiter">;; </span><span class="comment">Defines a colour scheme resembling that of the original TextMate
+</span><span class="comment-delimiter">;; </span><span class="comment">Twilight colour theme.  To use add the file to your
+</span><span class="comment-delimiter">;; </span><span class="comment">`</span><span class="constant">custom-theme-directory</span><span class="comment">' and run `M-x customize-themes'.
+</span><span class="comment-delimiter">;; </span><span class="comment">Alternatively, you may add the following to your init file:
+</span><span class="comment-delimiter">;;</span><span class="comment">
+</span><span class="comment-delimiter">;;     </span><span class="comment">(load-theme 'twilight t)
+</span><span class="comment-delimiter">;;</span><span class="comment">
+</span><span class="comment-delimiter">;; </span><span class="comment">Credits due to the excellent TextMate Twilight theme.
+</span><span class="comment-delimiter">;;</span><span class="comment">
+</span><span class="comment-delimiter">;; </span><span class="comment">Thanks to Travis Jeffery for ido-mode and fixes to the
+</span><span class="comment-delimiter">;; </span><span class="comment">minibuffer-prompt to fit in with the rest of the theme.
+</span>
+<span class="comment-delimiter">;;; </span><span class="comment">Code:
+</span>
+(<span class="keyword">deftheme</span> <span class="type">twilight</span>
+  <span class="doc">&quot;TextMate Twilight theme for GNU Emacs.&quot;</span>)
+
+(custom-theme-set-faces
+ 'twilight
+ '(default ((t (<span class="builtin">:background</span> <span class="string">&quot;#141414&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;#F8F8F8&quot;</span>))))
+ '(cursor ((t (<span class="builtin">:background</span> <span class="string">&quot;#CDA869&quot;</span>))))
+ '(blue ((t (<span class="builtin">:foreground</span> <span class="string">&quot;blue&quot;</span>))))
+ '(border-glyph ((t (nil))))
+ '(buffers-tab ((t (<span class="builtin">:background</span> <span class="string">&quot;#141414&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;#CACACA&quot;</span>))))
+
+ '(font-lock-warning-face ((t (<span class="builtin">:background</span> <span class="string">&quot;#EE799F&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;black&quot;</span>))))
+ '(font-lock-builtin-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CACACA&quot;</span>))))
+ '(font-lock-comment-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#5F5A60&quot;</span>))))
+ '(font-lock-constant-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CF6A4C&quot;</span>))))
+ '(font-lock-doc-string-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;DarkOrange&quot;</span>))))
+ '(font-lock-function-name-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#9B703F&quot;</span>))))
+ '(font-lock-keyword-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CDA869&quot;</span>))))
+ '(font-lock-preprocessor-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CF6A4C&quot;</span>))))
+ '(font-lock-reference-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;SlateBlue&quot;</span>))))
+ '(font-lock-string-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#8F9D6A&quot;</span>))))
+ '(font-lock-type-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#89788a&quot;</span>))))
+ '(font-lock-variable-name-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#7587A6&quot;</span>))))
+ '(font-lock-warning-face ((t (<span class="builtin">:background</span> <span class="string">&quot;#EE799F&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;red&quot;</span>))))
+ '(font-lock-regexp-grouping-backslash ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#E9C062&quot;</span>))))
+ '(font-lock-regexp-grouping-construct ((t (<span class="builtin">:foreground</span> <span class="string">&quot;red&quot;</span>))))
+
+ '(minibuffer-prompt ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#5F5A60&quot;</span>))))
+ '(fringe ((t (<span class="builtin">:background</span> <span class="string">&quot;black&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;grey55&quot;</span>))))
+ '(linum ((t (<span class="builtin">:background</span> <span class="string">&quot;#141314&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;#2D2B2E&quot;</span>))))
+ '(linum-highlight-face ((t (<span class="builtin">:inherit</span> linum <span class="builtin">:foreground</span> <span class="string">&quot;yellow&quot;</span>))))
+ '(hl-line ((t (<span class="builtin">:background</span> <span class="string">&quot;#212121&quot;</span>))))
+ '(mode-line ((t (<span class="builtin">:background</span> <span class="string">&quot;grey75&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;black&quot;</span> <span class="builtin">:height</span> 0.8))))
+ '(mode-line-inactive ((t (<span class="builtin">:background</span> <span class="string">&quot;grey10&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;grey40&quot;</span> <span class="builtin">:box</span> (<span class="builtin">:line-width</span> -1 <span class="builtin">:color</span> <span class="string">&quot;grey20&quot;</span>) <span class="builtin">:height</span> 0.8))))
+ '(gui-element ((t (<span class="builtin">:background</span> <span class="string">&quot;#D4D0C8&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;black&quot;</span>))))
+ '(region ((t (<span class="builtin">:background</span> <span class="string">&quot;#27292A&quot;</span>))))
+ '(shadow ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#4b474c&quot;</span>))))
+ '(highlight ((t (<span class="builtin">:background</span> <span class="string">&quot;#111111&quot;</span>))))
+ '(highline-face ((t (<span class="builtin">:background</span> <span class="string">&quot;SeaGreen&quot;</span>))))
+ '(left-margin ((t (nil))))
+ '(text-cursor ((t (<span class="builtin">:background</span> <span class="string">&quot;yellow&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;black&quot;</span>))))
+ '(toolbar ((t (nil))))
+ '(underline ((nil (<span class="builtin">:underline</span> nil))))
+ '(yas/field-highlight-face ((t (<span class="builtin">:background</span> <span class="string">&quot;#27292A&quot;</span>))))
+ '(mumamo-background-chunk-submode ((t (<span class="builtin">:background</span> <span class="string">&quot;#222222&quot;</span>))))
+ '(zmacs-region ((t (<span class="builtin">:background</span> <span class="string">&quot;snow&quot;</span> <span class="builtin">:foreground</span> <span class="string">&quot;blue&quot;</span>))))
+
+ <span class="comment-delimiter">;; </span><span class="comment">Ido
+</span> '(ido-subdir ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CF6A4C&quot;</span>))))
+ '(ido-first-match ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#8F9D6A&quot;</span>))))
+ '(ido-only-match ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#8F9D6A&quot;</span>))))
+
+ <span class="comment-delimiter">;; </span><span class="comment">Enhanced-Ruby-Mode
+</span> '(ruby-string-delimiter-face  ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#5A6340&quot;</span>))))
+ '(ruby-regexp-delimiter-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;orange&quot;</span>))))
+ '(ruby-heredoc-delimiter-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#9B859D&quot;</span>))))
+ '(ruby-op-face ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CDA869&quot;</span>))))
+
+ <span class="comment-delimiter">;; </span><span class="comment">Magit
+</span> '(magit-item-highlight ((((class color) (background dark))
+                          (<span class="builtin">:background</span> <span class="string">&quot;#212121&quot;</span>))))
+ '(magit-header ((((class color) (background dark))
+                  (<span class="builtin">:foreground</span> <span class="string">&quot;#9B703F&quot;</span>))))
+ '(magit-diff-add ((((class color) (background dark))
+                    (<span class="builtin">:background</span>  <span class="string">&quot;#8F9D6A&quot;</span>))))
+ '(magit-diff-del ((((class color) (background dark))
+                    (<span class="builtin">:background</span> <span class="string">&quot;#CF6A4C&quot;</span>))))
+
+ <span class="comment-delimiter">;; </span><span class="comment">Org
+</span> '(org-hide ((((background dark)) (<span class="builtin">:foreground</span> <span class="string">&quot;#141414&quot;</span>))))
+ '(org-clock-overlay ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#fff&quot;</span>))))
+ '(outline-4 ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#8F8A80&quot;</span>))))
+
+ <span class="comment-delimiter">;; </span><span class="comment">Diff
+</span> '(diff-header ((t (<span class="builtin">:background</span> <span class="string">&quot;#5F5A60&quot;</span>))))
+ '(diff-file-header ((t (<span class="builtin">:inherit</span> diff-header))))
+ '(diff-removed ((t (<span class="builtin">:background</span> <span class="string">&quot;#CF6A4C&quot;</span>))))
+ '(diff-changed ((t (<span class="builtin">:background</span> <span class="string">&quot;#CDA869&quot;</span>))))
+ '(diff-added ((t (<span class="builtin">:background</span>  <span class="string">&quot;#8F9D6A&quot;</span>))))
+
+ <span class="comment-delimiter">;; </span><span class="comment">term
+</span> '(term-color-black ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#313131&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#141414&quot;</span>))))
+ '(term-color-red ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CF6A4C&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#a3472c&quot;</span>))))
+ '(term-color-green ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#8F9D6A&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#646d4a&quot;</span>))))
+ '(term-color-yellow ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#efa510&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#CDA869&quot;</span>))))
+ '(term-color-blue ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#7587A6&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#5d6c84&quot;</span>))))
+ '(term-color-magenta ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#EE799F&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#EF2929&quot;</span>))))
+ '(term-color-cyan ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#5d8084&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#41595c&quot;</span>))))
+ '(term-color-white ((t (<span class="builtin">:foreground</span> <span class="string">&quot;#CACACA&quot;</span> <span class="builtin">:background</span> <span class="string">&quot;#5F5A60&quot;</span>))))
+ '(term-default-fg-color ((t (<span class="builtin">:inherit</span> term-color-white))))
+ '(term-default-bg-color ((t (<span class="builtin">:inherit</span> term-color-black))))
+ )
+
+(provide-theme 'twilight)
+
+<span class="comment-delimiter">;;;</span><span class="comment">###</span><span class="warning">autoload</span><span class="comment">
+</span>(<span class="keyword">when</span> load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+<span class="comment-delimiter">;; </span><span class="comment">Local Variables:
+</span><span class="comment-delimiter">;; </span><span class="comment">eval: (when (require 'rainbow-mode nil t) (rainbow-mode 1))
+</span><span class="comment-delimiter">;; </span><span class="comment">End:
+</span><span class="comment-delimiter">;;; </span><span class="comment">twilight-theme.el ends here
+</span></pre>
+
+ </body>
+</html>
