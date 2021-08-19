@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "摸鱼笔记一"
+title: "辞赋文句一"
 author: "dusksnow"
 ---
 

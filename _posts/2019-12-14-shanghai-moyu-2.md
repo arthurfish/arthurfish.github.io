@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "魔都摸鱼记·贰『摸于 WER 赛场』"
+title: "上海WER赛场懵逼记"
 author: "dusksnow"
 ---
 

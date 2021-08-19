@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "魔都摸鱼记·壹"
+title: "上海WER比赛游记"
 author: "dusksnow"
 ---
 
