@@ -46,3 +46,64 @@ g o f(x) = I(x) = x, and
 f o g(y) = I(y) = y  <-- Identity function
 
 f o f^{-1} = f^{-1} o f = I
+
+
+
+rate of change = $\frac{f(x_2-x_1)}{x_2-x_1} = \frac{change in f(x) w.r.t the change in x}{change in x}$
+
+$ratio = \frac{a}{b}$
+
+$rate = \frac{20RMB}{10kg apple} = \frac{2 RMB}{1kg}$
+
+截距 -> intercept
+
+斜率 -> slope
+
+割线 -> secant line
+
+| y=x^3               | y = x^2           |       y=x^n       |
+| ------------------- | ----------------- | :---------------: |
+| y = x^{\frac{1}{3}} | y=x^{\frac{1}{2}} | y=x^{\frac{1}{n}} |
+|                     | four roots        |      n roots      |
+
+in a triagle : "/" : Hypotenoccl?
+
+​					"|" : opposite
+
+​					"_": adjacent
+
+$$
+sin \theta = \frac{O}{H}	SOH \\
+
+C			= \frac{A}{H}	 CAH \\
+
+T			= \frac{O}{A}	TOA \\
+
+sec \theta = \frac{1}{cos \theta} = \frac{H}{A} \\
+
+csc \theta = \frac{1}{sin \theta} = \frac{H}{O} \\
+
+cot \theta =  \frac{1}{tan \theta}  = \frac{A}{O} \\
+$$
+radius
+
+radial
+
+radian 弧度
+$$
+sin 2\theta = 2 sin \theta cos \theta \\
+cos 2\theta = cos^2 \theta - sin^2 \theta \\
+sec(\theta + 2\pi) = sec \theta \\
+csc (\theta + 2\pi) = csc \theta \\
+tan(\theta + \pi) = tan \theta \\
+cot(\theta + \pi) = cot \theta \\
+D(t) = 2.8 sin( \frac{2\pi}{365}(t-81)) + 12 \\
+$$
+
+$lim_{x \to a} f(x) = L \\$
+left sided: $lim_{\Delta x \to 0}f(a+\Delta x) = L \\$
+right side: $lim_{\Delta x \to 0}f(a+\Delta x) = M \\$
+If $L = M$ (both limits at $x=a$ coverage t)o same number)
+
+then $lim_{x \to a} f(x) = L$
+
