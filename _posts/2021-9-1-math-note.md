@@ -107,3 +107,18 @@ If $L = M$ (both limits at $x=a$ coverage t)o same number)
 
 then $lim_{x \to a} f(x) = L$
 
+A function f is continuous a t "x=a"
+
+1. f(a) exists
+2. $lim_{x \to a}f(x)$ must exist
+3. $lim_{x \to a}f(x)=f(a)$ 
+
+right=sided continuous (Math definition)
+
+​					 = continuity (intuitive)
+
+
+
+The Intermediate Value Theorem
+
+f is continuous on the interval [a, b] and L is a number strictly between f(a) and f(b). Then therexists at least one number c in (a, b) satisfying f(c) = L.
