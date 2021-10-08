@@ -122,3 +122,29 @@ right=sided continuous (Math definition)
 The Intermediate Value Theorem
 
 f is continuous on the interval [a, b] and L is a number strictly between f(a) and f(b). Then therexists at least one number c in (a, b) satisfying f(c) = L.
+
+Derivative of a function at a point
+
+x = 'a'
+$$
+m_{tan} = \frac{dy}{dx} \vert_{x=a} = \lim_{h \to 0}\frac{f(a+h)-f(a)}{h} \\
+$$
+Ex. Use definition of derivative to find 
+
+$$
+\frac{df}{dx}
+$$
+
+$$
+(tan x)' = sec^2 x \\
+(cot x)' = -csc^2 x \\
+(sec x)' = sec x \cdot tan x \\
+(csc x)' = -csc x \cdot cot x \\
+
+\frac{d}{dx}(sin^{-1}x) = \frac{1}{\sqrt{1-x^2}} \\
+\frac{d}{dx}(cos^{-1}x) = -\frac{1}{\sqrt{1-x^2}} \\
+\frac{d}{dx}(tan^{-1}x) = \frac{1}{\sqrt{1+x^2}} \\
+\frac{d}{dx}(cot^{-1}x) = -\frac{1}{\sqrt{1+x^2}} \\
+\frac{d}{dx}(sec^{-1}x) = 
+$$
+
