@@ -143,8 +143,9 @@ $$
 
 \frac{d}{dx}(sin^{-1}x) = \frac{1}{\sqrt{1-x^2}} \\
 \frac{d}{dx}(cos^{-1}x) = -\frac{1}{\sqrt{1-x^2}} \\
-\frac{d}{dx}(tan^{-1}x) = \frac{1}{\sqrt{1+x^2}} \\
-\frac{d}{dx}(cot^{-1}x) = -\frac{1}{\sqrt{1+x^2}} \\
-\frac{d}{dx}(sec^{-1}x) = 
+\frac{d}{dx}(tan^{-1}x) = \frac{1}{1+x^2} \\
+\frac{d}{dx}(cot^{-1}x) = -\frac{1}{1+x^2} \\
+\frac{d}{dx}(sec^{-1}x) = \frac{1}{|x|\sqrt{x^2-1}} \\
+\frac{d}{dx}(csc^{-1}x) = -\frac{1}{|x|\sqrt{x^2-1}} \\
 $$
 
