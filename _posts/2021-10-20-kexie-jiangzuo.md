@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "科协讲座"
+title: "科协讲座讲义"
 author: "Arthurfish"
 ---
 
