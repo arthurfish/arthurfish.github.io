@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "微积分笔记一"
+title: "微积分笔记"
 author: "Aurthurfish"
 
 ---
@@ -149,3 +149,16 @@ $$
 \frac{d}{dx}(csc^{-1}x) = -\frac{1}{|x|\sqrt{x^2-1}} \\
 $$
 
+$X_c$ are critical point of a function $f'(x_c)$ = 0 or $f'(x_c)$ DNE.
+
+if $f$ is continueous on $[a, b]$ And $f$ is differentiable on $(a, b)$
+
+DEFINITION Critical Point:
+
+An interior point c of the domain of f at which f'(c) = 0 or **f'(c) fails to exist is called a critical point of f **
+
+FDT(First Derivative Test)
+
+THEOREM 4.1 Extreme Value Theorem:
+
+A function that is continuous on a closed interval [a, b] has an absolute maximum value and an absolute minimum value on that interval.
