@@ -25,44 +25,46 @@ SYMMETRIC function
 
 About y-axis
 
-​		-> even function (x^2, x^4, x^4)
+​		-> even function $(x^2, x^4, x^4)$
 
 w.r.t = with respect to
 
 w.r.t origin / or (x=y)
 
-​	->odd function (x^3, x^5,  ... x^{2n+1} )
+​	->odd function $(x^3, x^5,  ... x^{2n+1} )$
 
 Domain of a function
 
 Range of a function
 
-Conposit function: f(g(x) =   f o g(x)  -> f of g of x
+Conposit function:
 
-x~y y~x ('~' use to relation)
+f(g(x) =   f o g(x)  -> f of g of x 
 
-g o f(x) = I(x) = x, and
+x~y y~x ('~' use to relation) 
+
+g o f(x) = I(x) = x, and 
 
 f o g(y) = I(y) = y  <-- Identity function
 
-f o f^{-1} = f^{-1} o f = I
+f o $f^{-1} = f^{-1}$ o f = I
 
 
 
-rate of change = $\frac{f(x_2-x_1)}{x_2-x_1} = \frac{change in f(x) w.r.t the change in x}{change in x}$
+rate of change = $\frac{f(x_2-x_1)}{x_2-x_1} = \frac{change in\,f(x)\,w.r.t\,the\;change\;in\;x}{change\;in\;x}$
 
 $ratio = \frac{a}{b}$
 
-$rate = \frac{20RMB}{10kg apple} = \frac{2 RMB}{1kg}$
+$rate = \frac{20RMB}{10kg\;apple} = \frac{2\;RMB}{1kg}$
 
 截距 -> intercept
 
 斜率 -> slope
 割线 -> secant line
 
-| y=x^3               | y = x^2           |       y=x^n       |
+| $y=x^3$              | $y = x^2$          |       $y=x^n$      |
 | ------------------- | ----------------- | :---------------: |
-| y = x^{\frac{1}{3}} | y=x^{\frac{1}{2}} | y=x^{\frac{1}{n}} |
+|$y = x^{\frac{1}{3}}$ | $y=x^{\frac{1}{2}}$ | $y=x^{\frac{1}{n}}$ |
 |                     | four roots        |      n roots      |
 
 in a triagle : "/" : Hypotenoccl?
@@ -71,7 +73,7 @@ in a triagle : "/" : Hypotenoccl?
 
 ​					"_": adjacent
 
-$
+$$
 sin \theta = \frac{O}{H}	SOH \\
 
 C			= \frac{A}{H}	 CAH \\
@@ -83,7 +85,7 @@ sec \theta = \frac{1}{cos \theta} = \frac{H}{A} \\
 csc \theta = \frac{1}{sin \theta} = \frac{H}{O} \\
 
 cot \theta =  \frac{1}{tan \theta}  = \frac{A}{O} \\
-$
+$$
 
 radius
 
@@ -91,7 +93,7 @@ radial
 
 radian 弧度
 
-$
+$$
 
 sin 2\theta = 2 sin \theta cos \theta \\
 cos 2\theta = cos^2 \theta - sin^2 \theta \\
@@ -100,9 +102,9 @@ csc (\theta + 2\pi) = csc \theta \\
 tan(\theta + \pi) = tan \theta \\
 cot(\theta + \pi) = cot \theta \\
 D(t) = 2.8 sin( \frac{2\pi}{365}(t-81)) + 12 \\
-$
+$$
 
-$ lim_{x \to a} f(x) = L \\ $
+$\lim_{x \to a} f(x) = L \\$
 left sided: $lim_{\Delta x \to 0}f(a+\Delta x) = L \\$
 right side: $lim_{\Delta x \to 0}f(a+\Delta x) = M \\$
 If $L = M$ (both limits at $x=a$ coverage t)o same number)
@@ -157,7 +159,7 @@ if $f$ is continueous on $[a, b]$ And $f$ is differentiable on $(a, b)$
 
 DEFINITION Critical Point:
 
-An interior point c of the domain of f at which f'(c) = 0 or **f'(c) fails to exist is called a critical point of f **
+An interior point c of the domain of f at which f'(c) = 0 or f'(c) fails to exist is called a critical point of f
 
 FDT(First Derivative Test)
 
