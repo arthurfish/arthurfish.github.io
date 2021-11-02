@@ -35,3 +35,11 @@ paginate:       20
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+defaults:
+  -
+    scope: 
+      path: ""
+    values:
+      layout: "post"
+      author: "Arthurfish"

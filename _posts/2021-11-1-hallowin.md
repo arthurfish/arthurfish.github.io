@@ -1,6 +1,4 @@
 ---
-layout: post
-author: Arthurfish
 title: "万圣节摸鱼和万圣节舞会"
 ---
 

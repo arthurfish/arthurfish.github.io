@@ -58,7 +58,6 @@ $rate = \frac{20RMB}{10kg apple} = \frac{2 RMB}{1kg}$
 截距 -> intercept
 
 斜率 -> slope
-
 割线 -> secant line
 
 | y=x^3               | y = x^2           |       y=x^n       |
@@ -72,7 +71,7 @@ in a triagle : "/" : Hypotenoccl?
 
 ​					"_": adjacent
 
-$$
+$
 sin \theta = \frac{O}{H}	SOH \\
 
 C			= \frac{A}{H}	 CAH \\
@@ -84,13 +83,16 @@ sec \theta = \frac{1}{cos \theta} = \frac{H}{A} \\
 csc \theta = \frac{1}{sin \theta} = \frac{H}{O} \\
 
 cot \theta =  \frac{1}{tan \theta}  = \frac{A}{O} \\
-$$
+$
+
 radius
 
 radial
 
 radian 弧度
-$$
+
+$
+
 sin 2\theta = 2 sin \theta cos \theta \\
 cos 2\theta = cos^2 \theta - sin^2 \theta \\
 sec(\theta + 2\pi) = sec \theta \\
@@ -98,9 +100,9 @@ csc (\theta + 2\pi) = csc \theta \\
 tan(\theta + \pi) = tan \theta \\
 cot(\theta + \pi) = cot \theta \\
 D(t) = 2.8 sin( \frac{2\pi}{365}(t-81)) + 12 \\
-$$
+$
 
-$lim_{x \to a} f(x) = L \\$
+$ lim_{x \to a} f(x) = L \\ $
 left sided: $lim_{\Delta x \to 0}f(a+\Delta x) = L \\$
 right side: $lim_{\Delta x \to 0}f(a+\Delta x) = M \\$
 If $L = M$ (both limits at $x=a$ coverage t)o same number)
@@ -149,7 +151,7 @@ $$
 \frac{d}{dx}(csc^{-1}x) = -\frac{1}{|x|\sqrt{x^2-1}} \\
 $$
 
-$X_c$ are critical point of a function $f'(x_c)$ = 0 or $f'(x_c)$ DNE.
+$ X_c $ are critical point of a function $f'(x_c)$ = 0 or $f'(x_c)$ DNE.
 
 if $f$ is continueous on $[a, b]$ And $f$ is differentiable on $(a, b)$
 
@@ -162,3 +164,28 @@ FDT(First Derivative Test)
 THEOREM 4.1 Extreme Value Theorem:
 
 A function that is continuous on a closed interval [a, b] has an absolute maximum value and an absolute minimum value on that interval.
+
+Absolute extreme values of a f in [a, b]
+Definition: If f{c} <= f(x) V x in [a, b]
+=> f(c) is an absolute min value
+
+If f'(x_c) = 0 or DNE(=>x_c is a critical point only finitely many)
+possible candidate for max/minnima (local)
+$+$
+endpoint
+
+Example of IVT usage:
+f(x)=x^5 + 5x+7
+a. if f is continuous in [a, b]
+=> x^5 + 5x + 7 is continuous on (-1, 0)
+b. f(a) < 0 < f(b)
+f(-1) = -3 < 0 < 5 = f(0)
+Then, IVT guarantees existence of a point
+$c \in (-1, 0) s.f. f(c) = 0$
+
+0. Domian
+1. x-intercept or y-intercepy
+2. symmetric
+3. slant, H.A, V.A. 
+4. f' (intervals of increase, decrease)
+   f" (concanity)

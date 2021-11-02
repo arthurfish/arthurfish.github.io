@@ -1,3 +1,9 @@
+---
+layout: post
+title: "永富syllabus"
+author: "Aurthurfish"
+---
+
 Yongfu(Relic) Wang
 
 Office: GHKB C217
