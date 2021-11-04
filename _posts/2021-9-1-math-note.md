@@ -191,3 +191,20 @@ $c \in (-1, 0) s.f. f(c) = 0$
 3. slant, H.A, V.A. 
 4. f' (intervals of increase, decrease)
    f" (concanity)
+
+4.3 Graph of a function
+
+$$
+y = \frac{2x^3+5x+5}{(x+1)^2}
+$$
+Chap 1.
+Domain: (-Inf, -1), (-1, Inf)
+Symmetic:f(-x) !=  f(x)
+               != -f(x)
+Intercept x_intercept (y=0)
+          y_intercept (x=0)               
+
+Chap 2.
+ - V.A: x=-1
+ - H.A. None
+ - S.A y = 2x
