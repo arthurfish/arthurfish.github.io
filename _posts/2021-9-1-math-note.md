@@ -208,3 +208,21 @@ Chap 2.
  - V.A: x=-1
  - H.A. None
  - S.A y = 2x
+
+Mean Value Theorem
+Rolle's Theorem
+
+If
+1. f(x) is continuous on [a, b]
+2. f(x) is differentiable on (a, b)
+3. f(a) = f(b) ?
+
+Then there exists at least one c in (a, b) such that f'(c) = 0
+
+f'(c) = 0 Mean height of f
+$$
+=> m_{tan} at "c" = m_{sec}(a, b)
+$$
+
+Average rate of change aver (a, b)
+= instantaneous rate of change at some point at c in (a, b)
