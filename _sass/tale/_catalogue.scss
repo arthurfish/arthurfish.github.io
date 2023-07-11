@@ -3,7 +3,11 @@
     border-bottom: 1px solid $grey-2;
     color: $default-color;
     display: block;
-    padding: 2rem 0;
+
+
+    padding: 2rem 1rem;
+    margin: 2rem;
+    box-shadow: 8px 5px 20px 1px;
 
     &:hover .catalogue-line,
     &:focus .catalogue-line {

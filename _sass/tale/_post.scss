@@ -1,5 +1,7 @@
 .post {
-  padding: 3rem 0;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 20px 1px grey;
 
   &-info {
     color: $default-tint;
@@ -30,6 +32,12 @@
   p {
     margin: 0 0 1rem;
     text-align: justify;
+    border: solid #8080804d;
+    /* padding: 1rem; */
+    border-width: 5px 1px 1px 1px;
+    padding: 1rem;
+    transition: all 0.2s cubic-bezier(0, 0, 0, 1.22);
+    /* box-shadow: inset -14px 0px 20px 0px; */
   }
 
   a:hover {
@@ -40,7 +48,7 @@
     margin: 0 auto 0.5rem;
   }
 
-  img + em {
+  img+em {
     color: $default-tint;
     display: block;
     font-family: $sans-serif;
